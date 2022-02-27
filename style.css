@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -66,4 +67,79 @@ h3::before {
   top: 50%;
   box-shadow: 0 5px 0 0 #000000;
   border-radius: 0px 0px 4px 4px;
+}
+h3::after {
+  background-color: #696b83;
+  left: 0;
+  top: 0%;
+  border-radius: 4px 4px 0px 0px;
+}
+.timer::before,
+.timer::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #191a23;
+  border-radius: 50%;
+  z-index: 10;
+  top: 31%;
+}
+.timer::before {
+  left: -5px;
+}
+.timer::after {
+  right: -5px;
+}
+p {
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  color: #8385a9;
+}
+
+footer {
+  margin-top: 200px;
+  background-image: url(images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding-top: 77px;
+  letter-spacing: 5px;
+  transition: color 0.5s 0 ease;
+}
+.socials:hover {
+  color: white;
+  cursor: pointer;
+}
+.fa-brands {
+  font-size: 28px;
+  opacity: 0.6;
+}
+.attribution {
+  position: relative;
+  text-align: center;
+  top: 30px;
+  font-size: 13px;
+  color: #004a9e;
+}
+.attribution a {
+  color: #0066cc;
+}
+@keyframes click {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%;
+    opacity: 1;
+  }
 }

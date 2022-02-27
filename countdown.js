@@ -1,4 +1,4 @@
-const date = "2022 December 25";
+const date = "2022 May 05";
 
 const countTime = (endtime) => {
   const totalTime = Date.parse(endtime) - Date.parse(new Date());
