@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Launch countdown timer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Launch countdown timer</title>
 
-  We're launching soon
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>We're launching soon</h2>
+    </header>
+    <main>
+      <div class="countdown">
+        <div class="days timer">
+          <h3 class="days__title">00</h3>
+          <p>Days</p>
+        </div>
+        <div class="hours timer">
+          <h3 class="hours__title">00</h3>
+          <p>Hours</p>
+        </div>
+        <div class="minutes timer">
+          <h3 class="minutes__title">00</h3>
+          <p>Minutes</p>
+        </div>
+        <div class="seconds timer">
+          <h3 class="seconds__title">00</h3>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="socials">
+        <div><i class="fa-brands fa-facebook-square"></i></div>
+        <div><i class="fa-brands fa-pinterest-square"></i></div>
+        <div><i class="fa-brands fa-instagram"></i></div>
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/badnuclear">badnuclear</a>.
+    </div>
+  </body>
 
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <script src="countdown.js"></script>
+  <script
+    src="https://kit.fontawesome.com/395c8baaf3.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

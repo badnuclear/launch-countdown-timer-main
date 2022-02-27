@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191a23;
+  font-family: "Red Hat Text", sans-serif;
+  color: white;
+  font-size: 15px;
+  background-image: url("images/bg-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 80%;
+  margin: 142px auto 0;
+}
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 24px;
+}
+
+main {
+  width: 78%;
+  margin: auto;
+}
+.countdown {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 688px;
+  gap: 10px;
+}
+.timer {
+  width: 70px;
+  text-align: center;
+  position: relative;
+}
+h3 {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 2.5rem;
+  background-color: #191a23;
+  color: #fb5e84;
+  line-height: 50px;
+}
+h3::before,
+h3::after {
+  width: 100%;
+  content: "";
+  height: 50%;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 7;
+}
+h3::before {
+  background-color: #979797;
+  left: 0;
+  top: 50%;
+  box-shadow: 0 5px 0 0 #000000;
+  border-radius: 0px 0px 4px 4px;
+}
