@@ -1,4 +1,4 @@
-const date = "2023 December 31";
+const date = "2024 December 31";
 
 const countTime = (endtime) => {
   const totalTime = Date.parse(endtime) - Date.parse(new Date());
